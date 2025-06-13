@@ -18,16 +18,54 @@
         .title {
             font-size: 3rem;
             animation: pulse 2s infinite;
+            margin-bottom: 2rem;
         }
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.1); }
             100% { transform: scale(1); }
         }
+        .profile-wrapper {
+            text-align: center;
+        }
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+        }
+        .linkedin {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+        .linkedin a {
+            color: white;
+            text-decoration: none;
+        }
+        .linkedin svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 0.5rem;
+            fill: #0A66C2;
+        }
     </style>
 </head>
 <body>
-    <div class="title">Em Breve Pablo</div>
+    <div class="profile-wrapper">
+        <div class="title">Em Breve Pablo</div>
+        <!-- Use a third-party avatar service to load the current LinkedIn profile picture -->
+        <img src="https://unavatar.io/linkedin/pablocustodio" alt="Foto do Perfil" class="profile-picture">
+        <div class="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="LinkedIn">
+                <path d="M20.447 20.452h-3.554V14.72c0-1.366-.027-3.122-1.905-3.122-1.905 0-2.195 1.49-2.195 3.018v5.836h-3.554V9h3.414v1.561h.049c.476-.899 1.637-1.848 3.372-1.848 3.603 0 4.27 2.371 4.27 5.455v6.284zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zm-1.777 13.019h3.554V9H3.56v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+            </svg>
+            <a href="https://www.linkedin.com/in/pablocustodio/" target="_blank" rel="noopener noreferrer">linkedin.com/in/pablocustodio</a>
+        </div>
+    </div>
 </body>
 </html>
 
