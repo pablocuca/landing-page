@@ -3,69 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Application Developer</title>
+    <title>Pablo Custodio | Portfólio Profissional de Desenvolvimento Web e Tecnologia</title>
+    <meta name="description" content="Portfólio profissional de Pablo Custodio com foco em desenvolvimento web, tecnologia, consultoria digital e projetos de software para empresas e profissionais.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://www.pablocustodio.com.br/">
     <style>
+        :root {
+            --bg: #0f172a;
+            --bg-soft: #111827;
+            --primary: #2563eb;
+            --text: #f8fafc;
+            --muted: #cbd5e1;
+            --card: #1e293b;
+        }
+
+        * { box-sizing: border-box; }
+
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
             font-family: Arial, sans-serif;
-            color: white;
+            color: var(--text);
+            background: linear-gradient(180deg, #0b1120 0%, #111827 100%);
+            line-height: 1.6;
         }
-        .title {
-            font-size: 3rem;
-            animation: pulse 2s infinite;
-            margin-bottom: 2rem;
+
+        header, main, footer {
+            width: min(1080px, 92%);
+            margin: 0 auto;
         }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
+
+        header {
+            padding: 1.2rem 0 0.4rem;
         }
-        .profile-wrapper {
-            text-align: center;
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
         }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        nav a:hover,
+        nav a:focus-visible {
+            text-decoration: underline;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 2rem;
+            align-items: center;
+            padding: 2.2rem 0 1rem;
+        }
+
         .profile-picture {
-            width: 200px;
-            height: 200px;
+            width: 220px;
+            height: 220px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid white;
+            border: 4px solid #60a5fa;
         }
-        .linkedin {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 1rem;
-            font-size: 1.2rem;
+
+        h1 {
+            margin: 0;
+            font-size: clamp(1.8rem, 2.8vw, 2.6rem);
         }
-        .linkedin a {
-            color: white;
+
+        .intro {
+            margin-top: 0.8rem;
+            color: var(--muted);
+            font-size: 1.04rem;
+        }
+
+        section {
+            margin: 1.6rem 0;
+            background: rgba(15, 23, 42, 0.65);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            border-radius: 12px;
+            padding: 1.2rem;
+        }
+
+        h2 { margin-top: 0; }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 10px;
+            padding: 1rem;
+            border: 1px solid rgba(148, 163, 184, 0.2);
+        }
+
+        .linkedin a,
+        .contact-link {
+            color: #93c5fd;
             text-decoration: none;
+            font-weight: 700;
         }
-        .linkedin svg {
-            width: 24px;
-            height: 24px;
-            margin-right: 0.5rem;
-            fill: #0A66C2;
+
+        .linkedin a:hover,
+        .contact-link:hover,
+        .linkedin a:focus-visible,
+        .contact-link:focus-visible {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 2rem;
+            padding: 1.6rem 0 2rem;
+            border-top: 1px solid rgba(148, 163, 184, 0.2);
+            color: var(--muted);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 0.8rem;
+        }
+
+        .footer-links a { color: #bfdbfe; }
+
+        @media (max-width: 780px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .profile-picture { margin: 0 auto; }
         }
     </style>
 </head>
 <body>
-    <div class="profile-wrapper">
-        <div class="title">Mobile Application Developer</div>
-        <!-- Use a third-party avatar service to load the current LinkedIn profile picture -->
-        <img src="profile.jpg" alt="Foto do Perfil" class="profile-picture">
-        <div class="linkedin">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="LinkedIn">
-                <path d="M20.447 20.452h-3.554V14.72c0-1.366-.027-3.122-1.905-3.122-1.905 0-2.195 1.49-2.195 3.018v5.836h-3.554V9h3.414v1.561h.049c.476-.899 1.637-1.848 3.372-1.848 3.603 0 4.27 2.371 4.27 5.455v6.284zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zm-1.777 13.019h3.554V9H3.56v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
-            </svg>
-            <a href="https://www.linkedin.com/in/pablocustodio/" target="_blank" rel="noopener noreferrer">linkedin.com/in/pablocustodio</a>
+    <header>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+                <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio" aria-label="Apresentação profissional">
+            <img src="profile.jpg" alt="Foto profissional de Pablo Custodio" class="profile-picture">
+            <div>
+                <h1>Pablo Custodio — Portfólio Profissional de Desenvolvimento Web, Tecnologia e Serviços Digitais</h1>
+                <p class="intro">
+                    Este é o site profissional de <strong>Pablo Custodio</strong>, desenvolvedor com atuação em <strong>desenvolvimento web</strong>,
+                    soluções de tecnologia e <strong>consultoria digital</strong>. O objetivo deste site é apresentar experiência,
+                    serviços e projetos para empresas, recrutadores e clientes que buscam um profissional de tecnologia confiável.
+                </p>
+                <p class="linkedin">
+                    LinkedIn:
+                    <a href="https://www.linkedin.com/in/pablocustodio/" target="_blank" rel="noopener noreferrer">linkedin.com/in/pablocustodio</a>
+                </p>
+            </div>
+        </section>
+
+        <section aria-labelledby="servicos">
+            <h2 id="servicos">Serviços profissionais em tecnologia</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Desenvolvimento web</h3>
+                    <p>Criação e evolução de websites, landing pages e aplicações web com foco em desempenho, SEO técnico e segurança.</p>
+                </article>
+                <article class="card">
+                    <h3>Consultoria digital</h3>
+                    <p>Análise de presença digital, estrutura de conteúdo, arquitetura da informação e melhorias para canais institucionais.</p>
+                </article>
+                <article class="card">
+                    <h3>Portfólio e projetos</h3>
+                    <p>Implementação de interfaces modernas, manutenção de projetos existentes e suporte técnico para equipes de produto.</p>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="publico-alvo">
+            <h2 id="publico-alvo">Para quem este site é destinado</h2>
+            <p>
+                Este portfólio profissional foi desenvolvido para gestores, recrutadores, empresas e parceiros que precisam avaliar
+                experiência técnica em desenvolvimento de software, serviços digitais e soluções de tecnologia para negócios.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <strong>Pablo Custodio</strong>
+        <p>Site profissional e portfólio de desenvolvimento web, tecnologia e consultoria digital.</p>
+        <div class="footer-links">
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+            <a href="politica-de-privacidade.html">Política de Privacidade</a>
+            <a href="termos-de-uso.html">Termos de Uso</a>
         </div>
-    </div>
+    </footer>
+
+    <script>
+        if (window.location.protocol === 'http:' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+            window.location.replace('https://' + window.location.host + window.location.pathname + window.location.search + window.location.hash);
+        }
+    </script>
 </body>
 </html>
-
