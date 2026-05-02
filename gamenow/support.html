@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte - GameNow</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f8f9fa;
+    }
+    header {
+      background: linear-gradient(135deg, #ff9500 0%, #ff7200 100%);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      color: #ff9500;
+      margin-bottom: 15px;
+      font-size: 24px;
+      border-bottom: 2px solid #ff9500;
+      padding-bottom: 10px;
+    }
+    section h3 {
+      color: #333;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    section h3:first-child {
+      margin-top: 0;
+    }
+    section p {
+      margin-bottom: 15px;
+    }
+    section ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+    section li {
+      margin-bottom: 8px;
+    }
+    .contact-box {
+      background: #f0f0f0;
+      border-left: 4px solid #ff9500;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .contact-box strong {
+      color: #ff9500;
+    }
+    a {
+      color: #ff9500;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+    footer a {
+      color: #ff9500;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Suporte GameNow</h1>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Entre em contato</h2>
+      <div class="contact-box">
+        <p><strong>Email:</strong> <a href="mailto:apple@pablocustodio.com.br">apple@pablocustodio.com.br</a></p>
+        <p>Respondo em português. Tempo médio de resposta: 24-48 horas.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Perguntas frequentes</h2>
+
+      <h3>Como funciona a repetição espaçada?</h3>
+      <p>GameNow usa o algoritmo SM-2 (SuperMemo-2) para trazer de volta as palavras que você ainda não domina. Palavras que você acerta com frequência voltam mais devagar. Palavras difíceis voltam logo, para reforçar a memória.</p>
+
+      <h3>Como mudo meu nível CEFR?</h3>
+      <p>Vá em Configurações (⚙️) → Nível CEFR e selecione outro nível. O app prioriza palavras do seu nível e um nível acima (estratégia i+1 de Krashen).</p>
+
+      <h3>Meus dados são sincronizados com a nuvem?</h3>
+      <p>Não. GameNow é 100% offline e local. Seu progresso (palavras estudadas, quizzes respondidos, estatísticas) fica armazenado apenas no seu dispositivo usando UserDefaults do iOS. Nenhum dado é enviado para servidores remotos.</p>
+
+      <h3>Como apago meus dados?</h3>
+      <p>Desinstale o app. Seus dados locais serão deletados automaticamente. Não há conta de usuário na nuvem para limpar.</p>
+
+      <h3>Qual é a diferença entre os pacotes gratuitos e pagos?</h3>
+      <p>O pacote gratuito (free-core) tem 50 palavras essenciais de negócios e cotidiano. Pacotes pagos adicionais incluem temas como viagem, business avançado, phrasal verbs, etc. Você pode estudar com o pacote gratuito indefinidamente.</p>
+
+      <h3>Como reporto um bug?</h3>
+      <p>Envie um email para <a href="mailto:apple@pablocustodio.com.br">apple@pablocustodio.com.br</a> com:</p>
+      <ul>
+        <li>Descrição clara do problema (o que aconteceu?)</li>
+        <li>Modelo do dispositivo e versão do iOS (Configurações → Geral → Sobre)</li>
+        <li>Versão do GameNow (Configurações → Sobre → Versão)</li>
+        <li>Passos para reproduzir o problema</li>
+      </ul>
+
+      <h3>Posso sugerir uma feature?</h3>
+      <p>Claro! Envie suas ideias por email. Leio todas as sugestões e considero para versões futuras.</p>
+
+      <h3>O app tem publicidade?</h3>
+      <p>Não. GameNow não tem anúncios e nunca terá. Usa um modelo de compra única por pacote (freemium) e doação opcional.</p>
+
+      <h3>O app funciona offline?</h3>
+      <p>Sim, 100%. Não precisa de internet para jogar ou estudar. Seu progresso é salvo localmente.</p>
+
+      <h3>Há suporte para outros idiomas?</h3>
+      <p>Atualmente, GameNow é apenas para aprender inglês. Mas inglês é o idioma mais falado do mundo, então é um bom começo! :)</p>
+
+      <h3>Como funciona a compra de pacotes?</h3>
+      <p>Pacotes adicionais são comprados via App Store (StoreKit 2). Após a compra, você tem acesso permanente a todas as palavras daquele pacote. Não há assinatura obrigatória — é uma compra única.</p>
+    </section>
+
+    <section>
+      <h2>Problemas comuns</h2>
+
+      <h3>O app não aparece no meu perfil do Family Sharing</h3>
+      <p>Se você comprou o app com uma conta diferente, ele não sincroniza automaticamente com outras contas. Você pode restaurar a compra: Configurações → [Seu nome] → iTunes e App Stores → restaurar compras.</p>
+
+      <h3>O quiz de pronúncia não funciona</h3>
+      <p>Verifique se:</p>
+      <ul>
+        <li>O microfone está habilitado em Configurações → GameNow → Microfone</li>
+        <li>Seu dispositivo tem microfone funcionando (iPhone/iPad)</li>
+        <li>Tente reiniciar o app</li>
+      </ul>
+
+      <h3>Não consigo restaurar minha compra</h3>
+      <p>Restaurar compras funciona apenas com a conta Apple ID que fez a compra original. Se comprou com outra conta, faça login com aquela conta (Configurações → [Seu nome] → iTunes e App Stores).</p>
+    </section>
+
+    <section>
+      <h2>Feedback</h2>
+      <p>Adoraria ouvir sua opinião! Se o app te ajudou a aprender inglês, considere deixar uma avaliação na App Store — isso significa muito para um desenvolvedor indie. 🙏</p>
+      <p>Para sugestões de features ou relatos de bugs, escreva para <a href="mailto:apple@pablocustodio.com.br">apple@pablocustodio.com.br</a>.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Pablo Custodio Carneiro. Todos os direitos reservados.</p>
+    <p style="margin-top: 15px; font-size: 14px;">
+      <a href="/index.html">Início</a> •
+      <a href="/privacy-policy.html">Privacidade</a> •
+      <a href="/terms-of-service.html">Termos</a>
+    </p>
+  </footer>
+</body>
+</html>
